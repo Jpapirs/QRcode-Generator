@@ -77,18 +77,18 @@ button {
   border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
+  transition: ease-out 3s;
 }
 
-.qr-code{
-    display: none;
-    justify-items: center;
+.qr-code {
+  display: none;
+  justify-items: center;
 }
-.qr-code [data-qrcode]{
-    background-color: #fafaf9;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 20px;
-
+.qr-code [data-qrcode] {
+  background-color: #fafaf9;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 20px;
 }
 
 .buttons {
@@ -102,4 +102,21 @@ button {
 
 .img-span {
   vertical-align: middle;
+}
+
+@media (max-width: 550px) {
+  form {
+    flex-direction: column;
+  }
+  .formulario {
+    width: 95%;
+  }
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  input::placeholder {
+    text-align: center;
+    opacity: 0.5;
+  }
 }
