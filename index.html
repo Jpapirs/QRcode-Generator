@@ -5,31 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css">
     <title>QR code generator</title>
-    </style>
   </head>
   <body>
     <main class="main">
-      <section class="section">
+      <section class="section" data-firstSection>
         <figure class="img">
           <img src="resources/Logo.svg" alt="Logo">
         </figure>
         <div class="formulario">
-          <form>
-            <input type="url" name="url" id="url" placeholder="Enter an url"> <button type="submit">QR code</button>
+          <form >
+            <input type="url" name="url" id="url" placeholder="Enter an url" data-form> 
+            <button type="submit" data-btn>QR code</button>
           </form>
         </div>
       </section>
-      <section class="qr-code">
+      <section class="qr-code" data-secondSection>
         <figure class="photo">
-          <img src="" [dataqrcode]>
+          <div data-qrcode>
+
+          </div>
         </figure>
         <div class="buttons">
-          <button class="buttons-after">Download <span class="img-span"><img src="resources/link_alt.svg"></span></button>
-          <button class="buttons-after">Share <span class="img-span"><img src="resources/link_alt.svg"></span></button>
+          <button class="buttons-after" data-buttons>Download <span class="img-span"><img src="resources/link_alt.svg"></span></button>
+          <button class="buttons-after" data-buttons>Share <span class="img-span"><img src="resources/link_alt.svg"></span></button>
           
         </div>
       </section>
     </main>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script
+    
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="js/script.js"></script>
+    
 </html>
