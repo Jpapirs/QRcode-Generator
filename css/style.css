@@ -44,8 +44,8 @@ body {
   width: 70%;
 }
 
-form{
-display: flex;
+form {
+  display: flex;
   align-items: center;
   justify-content: space-between;
 }
@@ -65,16 +65,29 @@ input::placeholder {
   font-size: 1.2rem;
 }
 
-form{
-    justify-self: center;
-    width: 100%;
+form {
+  justify-self: center;
+  width: 100%;
 }
 
-.formulario button {
+button {
   background-color: #263fa9;
   color: #fafaf9;
   padding: 1rem 2rem;
   border-radius: 20px;
   font-size: 1rem;
   cursor: pointer;
+}
+
+.buttons {
+  justify-self: center;
+}
+
+.buttons button {
+  padding: 10px;
+  margin-right: 15px;
+}
+
+.img-span {
+  vertical-align: middle;
 }
