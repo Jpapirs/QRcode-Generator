@@ -79,6 +79,10 @@ button {
   cursor: pointer;
 }
 
+.qr-code{
+    display: none;
+}
+
 .buttons {
   justify-self: center;
 }
